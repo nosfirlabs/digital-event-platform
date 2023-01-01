@@ -1,0 +1,9 @@
+openai
+gitpython
+fastapi
+requests
+pydantic
+uvicorn
+ipfshttpclient
+starlette
+jinja2

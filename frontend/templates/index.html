@@ -1,0 +1,84 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Virtual Event Platform</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="/">Home</a>
+        <a href="/events">Events</a>
+        <a href="/registrations">Registrations</a>
+    </nav>
+
+    <!-- Main content -->
+    <main>
+        <!-- Home page -->
+        <section id="home">
+            <h1>Welcome to the Virtual Event Platform</h1>
+            <p>This platform allows you to host and attend virtual events such as conferences, workshops, and webinars. You can view a list of available events and register for them, or create your own event and invite others to attend.</p>
+        </section>
+
+        <!-- Events page -->
+        <section id="events" style="display: none;">
+            <h1>Events</h1>
+            <table id="events-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th>Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <button id="create-event-btn">Create event</button>
+            <!-- Event creation form -->
+            <form id="create-event-form" style="display: none;">
+                <label for="event-name">Name:</label>
+                <input type="text" id="event-name" required>
+                <br>
+                <label for="event-description">Description:</label>
+                <textarea id="event-description"></textarea>
+                <br>
+                <label for="event-date">Date:</label>
+                <input type="date" id="event-date" required>
+                <br>
+                <button type="submit">Create</button>
+                <button type="button" id="cancel-create-event-btn">Cancel</button>
+            </form>
+            <!-- Event documents -->
+            <div id="event-documents" style="display: none;"></div>
+            <!-- Add document form -->
+            <form id="add-document-form" style="display: none;">
+                <label for="document-file">File:</label>
+                <input type="file" id="document-file" required>
+                <br>
+                <button type="submit">Add</button>
+                <button type="button" id="cancel-add-document-btn">Cancel</button>
+            </form>
+        </section>
+
+        <!-- Registrations page -->
+        <section id="registrations" style="display: none;">
+            <h1>Registrations</h1>
+            <table id="registrations-table">
+                <thead>
+                    <tr>
+                        <th>Event</th>
+                        <th>Name</th>
+                        <th>Email
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- JavaScript -->
+    <script src="/static/script.js"></script>
+</body>
+</html>
